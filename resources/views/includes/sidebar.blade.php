@@ -82,7 +82,6 @@
         </div>
       </li>
 
-
       <li class="menu-item {{ (request()->is('dashboard/file-manager*')) ? 'menu-item-active' : '' }}" aria-haspopup="true">
         <a href="/dashboard/file-manager" class="menu-link">
           <i class="menu-icon fas fa-hdd"></i>
