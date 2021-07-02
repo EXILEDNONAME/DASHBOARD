@@ -57,8 +57,9 @@ class UserController extends Controller {
   **/
 
   public function show($id) {
+    $model = $this->model;
     $data = $this->model::findOrFail($id);
-    return view($this->path . '.show', compact('data'));
+    return view($this->path . '.show', compact('data', 'model'));
   }
 
   /**

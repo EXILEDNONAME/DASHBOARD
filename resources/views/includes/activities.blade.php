@@ -143,7 +143,7 @@ var KTApexChartsDemo = function () {
       chart: { height: 350, type: 'area' },
       dataLabels: { enabled: true },
       stroke: { curve: 'smooth' },
-      xaxis: { categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], },
+      xaxis: { categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], },
       colors: [success, warning, info]
     };
     var chart = new ApexCharts(document.querySelector(apexChart), options);
