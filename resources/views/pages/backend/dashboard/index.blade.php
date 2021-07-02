@@ -7,14 +7,6 @@
 
 @push('content')
 
-@if (Auth::user()->accesses->name == 'Full-Administrator')
-@include('pages.backend.dashboard.access.full-administrator')
-@endif
-
-@if (Auth::user()->accesses->name == 'User-VMS')
-@include('pages.backend.dashboard.access.user-vms')
-@endif
-
 @endpush
 
 

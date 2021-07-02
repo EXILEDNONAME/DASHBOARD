@@ -9,7 +9,7 @@
         </a>
       </li>
 
-      @if ( haveAccess('Full-Administrator'))
+      @if ( Middleware('Administrator'))
       <li class="menu-item">
         <a href="javascript:;" onclick="return alert('Maintenance!')" class="menu-link">
           <i class="menu-icon fas fa-envelope"></i>
@@ -27,14 +27,12 @@
 
       @include('includes.sidebar-item')
 
-      @if ( haveAccess('Full-Administrator') || haveAccess('administrator'))
+      @if ( Middleware('Administrator'))
       <li class="menu-section">
         <h4 class="menu-text"> Extensions </h4>
         <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
       </li>
-      @endif
 
-      @if ( haveAccess('Full-Administrator'))
       <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/dummy*')) ? 'menu-item-active menu-item-open' : '' }}">
         <a href="javascript:;" class="menu-link menu-toggle">
           <span class="menu-icon"><i class="menu-icon fas fa-hashtag"></i></span>
@@ -83,18 +81,15 @@
           </ul>
         </div>
       </li>
-      @endif
 
-      @if ( haveAccess('Full-Administrator') || haveAccess('Administrator'))
+
       <li class="menu-item {{ (request()->is('dashboard/file-manager*')) ? 'menu-item-active' : '' }}" aria-haspopup="true">
         <a href="/dashboard/file-manager" class="menu-link">
           <i class="menu-icon fas fa-hdd"></i>
           <span class="menu-text"> File Manager </span>
         </a>
       </li>
-      @endif
 
-      @if ( haveAccess('Full-Administrator'))
       <li class="menu-item">
         <a href="javascript:;" onclick="return alert('Maintenance!')" class="menu-link">
           <i class="menu-icon fas fa-recycle"></i>
@@ -109,7 +104,7 @@
         <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
       </li>
 
-      @if ( haveAccess('Full-Administrator'))
+      @if ( Middleware('Administrator'))
       <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/management*')) ? 'menu-item-active menu-item-open' : '' }}" aria-haspopup="true" data-menu-toggle="hover">
         <a href="javascript:;" class="menu-link menu-toggle">
           <span class="menu-icon"><i class="menu-icon fas fa-shield-alt"></i></span>
@@ -143,7 +138,7 @@
         </a>
       </li>
 
-      @if ( haveAccess('Full-Administrator') || haveAccess('Administrator'))
+      @if ( Middleware('Administrator'))
       <li class="menu-item {{ (request()->is('dashboard/statistics*')) ? 'menu-item-active' : '' }}" aria-haspopup="true">
         <a href="/dashboard/statistics" class="menu-link">
           <i class="menu-icon fas fa-bug"></i>

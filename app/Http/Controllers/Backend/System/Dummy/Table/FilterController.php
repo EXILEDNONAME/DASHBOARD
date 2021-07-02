@@ -19,7 +19,6 @@ class FilterController extends Controller {
   **/
 
   public function __construct() {
-    $this->middleware(['administrator', 'auth']);
     $this->url = '/dashboard/dummy/table/filters';
     $this->path = 'pages.backend.system.dummy.table.filter';
     $this->model = 'App\Models\Backend\System\Dummy\Table\Filter';

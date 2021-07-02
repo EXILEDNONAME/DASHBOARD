@@ -13,12 +13,7 @@ class AppServiceProvider extends ServiceProvider {
         // System
         require_once app_path() . '/Helpers/System/Default.php';
         require_once app_path() . '/Helpers/System/Dummy.php';
-
-        // Main
-        require_once app_path() . '/Helpers/Main/Jasamarga.php';
-        require_once app_path() . '/Helpers/Main/Jmtm.php';
-        require_once app_path() . '/Helpers/Main/Sesko.php';
-        require_once app_path() . '/Helpers/Main/Vms.php';
+        
     }
 
     public function boot() {

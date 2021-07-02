@@ -8,17 +8,19 @@ function Accesses() {
   return $items;
 }
 
+function Middleware($middleware) {
+  $data = Access::where('name', $middleware)->first();
+
+  if ( Auth::User()->id_access == $data->id ) {
+    $items = Auth::User()->id_access;
+    return $items;
+  }
+
+}
+
 function activities($model) {
   $items = $activity = Activity::where('subject_type', $model)->orderBy('created_at', 'desc')->get();
   return $items;
-}
-
-function haveAccess($name) {
-  $id = Auth::User()->id_access;
-  if ( Access::where('name', $name)->where('id', $id)->first()) {
-    $items = Access::where('name', 'like', '%' . $name . '%')->where('id', $id)->first();
-    return $items;
-  }
 }
 
 function chart_created($model) {

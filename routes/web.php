@@ -13,16 +13,6 @@ Route::get('dashboard/logout', 'Backend\DashboardController@logout')->name('dash
 // LANGUAGE
 Route::get('lang/{language}', 'LocalizationController@switch')->name('localization.switch');
 
-// SYSTEM
-require __DIR__.'/backend/system/dummy.php';
-require __DIR__.'/backend/system/management.php';
-
-// MAIN
-require __DIR__.'/backend/main/jasamarga.php';
-require __DIR__.'/backend/main/jmtm.php';
-require __DIR__.'/backend/main/sesko.php';
-require __DIR__.'/backend/main/vms.php';
-
 // PROFILE
 Route::group([
   'as' => 'dashboard.profile.',
@@ -36,3 +26,7 @@ Route::group([
   Route::get('timeline', 'ProfileController@timeline')->name('timeline');
   Route::resource('/', 'ProfileController')->parameters(['' => 'id']);
 });
+
+// SYSTEM
+require __DIR__.'/backend/system/dummy.php';
+require __DIR__.'/backend/system/management.php';

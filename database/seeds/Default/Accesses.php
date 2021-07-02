@@ -8,11 +8,15 @@ class Accesses extends Seeder {
   public function run() {
     $data = [
       [
-        'name'          => 'Full-Administrator',
+        'name'          => 'Administrator',
         'created_at'    => Carbon::now(),
       ],
       [
-        'name'          => 'Administrator',
+        'name'          => 'Operator',
+        'created_at'    => Carbon::now(),
+      ],
+      [
+        'name'          => 'User',
         'created_at'    => Carbon::now(),
       ],
     ];
