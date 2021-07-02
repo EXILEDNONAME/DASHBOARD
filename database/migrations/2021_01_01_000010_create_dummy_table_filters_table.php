@@ -10,7 +10,6 @@ class CreateDummyTableFiltersTable extends Migration {
       $table->increments('id');
       $table->integer('id_multi_relation')->unsigned();
       $table->string('name');
-      
       $table->text('description')->nullable();
       $table->integer('active')->default(1);
       $table->integer('status')->default(1);
