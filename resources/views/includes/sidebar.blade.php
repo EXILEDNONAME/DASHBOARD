@@ -9,22 +9,6 @@
         </a>
       </li>
 
-      @if ( Middleware('Administrator'))
-      <li class="menu-item">
-        <a href="javascript:;" onclick="return alert('Maintenance!')" class="menu-link">
-          <i class="menu-icon fas fa-envelope"></i>
-          <span class="menu-text"> Messages </span>
-        </a>
-      </li>
-
-      <li class="menu-item">
-        <a href="javascript:;" onclick="return alert('Maintenance!')" class="menu-link">
-          <i class="menu-icon fas fa-bell"></i>
-          <span class="menu-text"> Notifications </span>
-        </a>
-      </li>
-      @endif
-
       @include('includes.sidebar-item')
 
       @if ( Middleware('Administrator'))

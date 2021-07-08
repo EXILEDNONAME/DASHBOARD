@@ -112,11 +112,12 @@ class AccessController extends Controller {
   **/
 
   public function destroy($id) {
-    try {
+    if ( $id == 1 ) {
+      return redirect($this->url)->with('error', 'Restricted User!');
+    }
+    else {
       $this->model::destroy($id);
       return redirect($this->url)->with('success', trans('default.notification.success.item-deleted'));
-    } catch (\Exception $e) {
-      return redirect($this->url)->with('error', trans('default.notification.error'));
     }
   }
 
