@@ -19,7 +19,7 @@
       <div class="d-flex flex-column pt-12 bgi-size-cover bgi-no-repeat rounded-top" style="background-image: url(/assets/backend/media/misc/bg-1.jpg)">
         <h4 class="d-flex flex-center rounded-top">
           <span class="text-white">User Notifications</span>
-          <span class="btn btn-text btn-success btn-sm font-weight-bold btn-font-md ml-2">23 new</span>
+          <span class="btn btn-text btn-success btn-sm font-weight-bold btn-font-md ml-2"> 0 </span>
         </h4>
         <ul class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-line-transparent-white nav-tabs-line-active-border-success mt-3 px-8" role="tablist">
           <li class="nav-item">
@@ -36,7 +36,7 @@
       <div class="tab-content">
 
         <div class="tab-pane active show p-8" id="topbar_notifications_notifications" role="tabpanel">
-          <div class="scroll pr-7 mr-n7" data-scroll="true" data-height="300" data-mobile-height="200">
+          <!-- <div class="scroll pr-7 mr-n7" data-scroll="true" data-height="300" data-mobile-height="200">
             <div class="d-flex align-items-center mb-6">
               <div class="symbol symbol-40 symbol-light-primary mr-5">
                 <span class="symbol-label">
@@ -56,14 +56,14 @@
                 <span class="text-muted"> Dummy Description Notifications </span>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="d-flex flex-center pt-7">
             <a href="#" class="btn btn-light-primary font-weight-bold text-center">See All</a>
           </div>
         </div>
 
-        <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
-          <div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
+        <div class="tab-pane p-8" id="topbar_notifications_events" role="tabpanel">
+          <!-- <div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
             <a href="#" class="navi-item">
               <div class="navi-link">
                 <div class="navi-icon mr-2">
@@ -75,6 +75,9 @@
                 </div>
               </div>
             </a>
+          </div> -->
+          <div class="d-flex flex-center pt-7">
+            <a href="#" class="btn btn-light-primary font-weight-bold text-center">See All</a>
           </div>
         </div>
 
