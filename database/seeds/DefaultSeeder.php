@@ -8,11 +8,6 @@ class DefaultSeeder extends Seeder {
     // Default
     $this->call(Accesses::class);
     $this->call(Users::class);
-
-    // Packet
-    $this->call(ProvinceSeeder::class);
-    $this->call(CitySeeder::class);
-
-    $this->call(JobSeeder::class);
+    
   }
 }
